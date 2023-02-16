@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OwO</title>
+</head>
+<body>
+<h1>go away</h1>
+
+<p>Gebruik deze knop om een school aan te maken</p>
+<button onclick="makeSchool()" >Toon alle Scholen</button>
+<p id="test-school"></p>
+
+<h2>Zoek school op naam</h2>
+<label for="name">Naam</label>
+<input type="text" id="name">
+<button onclick="searchSchoolByName()">Zoeken</button>
+<table>
+    <tr>
+        <th>Naam</th>
+        <th>Aantal studenten</th>
+    </tr>
+    <tbody id="zoekresultaat"></tbody>
+</table>
+
+
+<p>Gebruik deze knop om alle scholen op te halen</p>
+<button onclick="getAllSchools()">button</button>
+<p id="all-schools"></p>
+
+<table>
+    <tr>
+        <th>Naam</th>
+        <th>Aantal studenten</th>
+    </tr>
+    <tbody id="table"></tbody>
+</table>
+
+<p>Gebruik deze knop om alle scholen op te halen</p>
+<button onclick="getAllStudents()">button</button>
+<p id="all-students"></p>
+
+<table>
+    <tr>
+        <th>Naam</th>
+        <th>Klas</th>
+        <th>School</th>
+    </tr>
+    <tbody id="studenttable"></tbody>
+</table>
+
+<a href="school/schoolform.html">Klik hier om een school toe te voegen</a>
+<a href="student/studentform.html">Klik hier om een student toe te voegen</a>
+
+
+</body>
+<script src="app.js"></script>
+</html>
