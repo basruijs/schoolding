@@ -49,4 +49,8 @@ public class ContactPerson {
     public void setStudent(Student student) {
         this.student = student;
     }
+
+    public Long getId() {
+        return id;
+    }
 }

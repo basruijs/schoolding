@@ -71,3 +71,23 @@ async function getAllStudents() {
     buildStudentTable(data);
 }
 
+function buildContactPersonTable(data) {
+    const studentTable = document.getElementById("contactpersontable");
+    studentTable.innerHTML = "";
+    for (let i = 0; i < data.length; i++) {
+        let row = `<tr>
+                        <td>${data[i].name}</td>
+                        <td>${data[i].phoneNr}</td>
+                        <td>${data[i].studentId}</td>
+
+                   </tr>`;
+    studentTable.innerHTML += row;
+    }
+}
+
+async function getAllContactPersons() {
+    const result = await fetch("http://localhost:8082/api/contactperson/all");
+    const data = await result.json();
+    buildStudentTable(data);
+}
+
